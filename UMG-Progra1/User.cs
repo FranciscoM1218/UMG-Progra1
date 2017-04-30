@@ -22,6 +22,7 @@ namespace UMG_Progra1
             this.name = name;
             this.email = email;
             this.admin = admin;
+            Console.Write("Otro texto");
         }
 
     }
