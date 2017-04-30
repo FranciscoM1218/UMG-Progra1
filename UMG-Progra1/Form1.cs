@@ -24,5 +24,13 @@ namespace UMG_Progra1
             login.MdiParent = this;
             login.Show();
         }
+        public void EnableMenuStrip ()
+        {
+            Console.WriteLine("Enabled");
+            //menuStrip1.Items[0].Visible  = false;
+            menuStrip1.Visible = true;
+            login.Hide();
+
+        }
     }
 }

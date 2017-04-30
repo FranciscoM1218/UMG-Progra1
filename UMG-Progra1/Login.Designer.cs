@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.loginButton = new System.Windows.Forms.Button();
+            this.paswordText = new System.Windows.Forms.TextBox();
+            this.emailText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // loginButton
             // 
-            this.button1.Location = new System.Drawing.Point(117, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ingresar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.loginButton.Location = new System.Drawing.Point(117, 133);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(75, 23);
+            this.loginButton.TabIndex = 0;
+            this.loginButton.Text = "Ingresar";
+            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
-            // textBox1
+            // paswordText
             // 
-            this.textBox1.Location = new System.Drawing.Point(106, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.paswordText.Location = new System.Drawing.Point(106, 96);
+            this.paswordText.Name = "paswordText";
+            this.paswordText.Size = new System.Drawing.Size(100, 20);
+            this.paswordText.TabIndex = 1;
             // 
-            // textBox2
+            // emailText
             // 
-            this.textBox2.Location = new System.Drawing.Point(106, 57);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
+            this.emailText.Location = new System.Drawing.Point(106, 58);
+            this.emailText.Name = "emailText";
+            this.emailText.Size = new System.Drawing.Size(100, 20);
+            this.emailText.TabIndex = 2;
             // 
             // label1
             // 
@@ -84,9 +84,9 @@
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.emailText);
+            this.Controls.Add(this.paswordText);
+            this.Controls.Add(this.loginButton);
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);
@@ -96,9 +96,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button loginButton;
+        private System.Windows.Forms.TextBox paswordText;
+        private System.Windows.Forms.TextBox emailText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

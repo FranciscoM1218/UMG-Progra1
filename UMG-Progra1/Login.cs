@@ -17,9 +17,11 @@ namespace UMG_Progra1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void loginButton_Click(object sender, EventArgs e)
         {
-            Console.Write("a");
+            Console.WriteLine("click");
+            var parent = (Form1)MdiParent;
+            parent.EnableMenuStrip();
         }
     }
 }
