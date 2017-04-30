@@ -17,11 +17,30 @@ namespace UMG_Progra1
             InitializeComponent();
         }
 
+        User getUser (string email, string password)
+        {
+            if (password.Equals("test"))
+            {
+                return new User("Mario", "mario@email.com");
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         private void loginButton_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("click");
             var parent = (Form1)MdiParent;
-            parent.EnableMenuStrip();
+            User user = getUser(emailText.Text, paswordText.Text);
+            if (user != null)
+            {
+                parent.EnableMenuStrip(user);
+            }
+            else
+            {
+                loginWarning.Visible = true;
+            } 
         }
     }
 }

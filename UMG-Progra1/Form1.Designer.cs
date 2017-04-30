@@ -35,6 +35,8 @@
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +44,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.administracionToolStripMenuItem,
-            this.reservacionesToolStripMenuItem});
+            this.reservacionesToolStripMenuItem,
+            this.userMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(606, 24);
@@ -91,6 +94,21 @@
             this.reservacionesToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
             this.reservacionesToolStripMenuItem.Text = "Reservaciones";
             // 
+            // userMenu
+            // 
+            this.userMenu.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.userMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salirToolStripMenuItem});
+            this.userMenu.Name = "userMenu";
+            this.userMenu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.userMenu.Size = new System.Drawing.Size(12, 20);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +136,8 @@
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cuotasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reservacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem userMenu;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }
 }
 

@@ -13,6 +13,7 @@ namespace UMG_Progra1
     public partial class Form1 : Form
     {
         Login login;
+        private User currentUser;
         public Form1()
         {
             InitializeComponent();
@@ -24,13 +25,14 @@ namespace UMG_Progra1
             login.MdiParent = this;
             login.Show();
         }
-        public void EnableMenuStrip ()
+        public void EnableMenuStrip (User user)
         {
             Console.WriteLine("Enabled");
             //menuStrip1.Items[0].Visible  = false;
             menuStrip1.Visible = true;
             login.Hide();
-
+            this.currentUser = user;
+            userMenu.Text = user.Name;
         }
     }
 }

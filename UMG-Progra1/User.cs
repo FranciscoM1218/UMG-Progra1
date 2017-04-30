@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UMG_Progra1
 {
-    class User
+    public class User
     {
         private int id_user;
         private string dpi;
@@ -15,6 +15,19 @@ namespace UMG_Progra1
         private int age;
         private bool admin;
 
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }
+
         public User(int id_user, string dpi, string name, string email, int age, bool admin)
         {
             this.id_user = id_user;
@@ -22,6 +35,13 @@ namespace UMG_Progra1
             this.name = name;
             this.email = email;
             this.admin = admin;
+        }
+
+        // constructor temporal
+        public  User(string name, string email)
+        {
+            this.name = name;
+            this.email = email;
         }
 
     }
