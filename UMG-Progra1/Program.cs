@@ -17,6 +17,7 @@ namespace UMG_Progra1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            Console.Write("");
         }
     }
 }
