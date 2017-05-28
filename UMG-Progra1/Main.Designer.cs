@@ -1,6 +1,6 @@
 ﻿namespace UMG_Progra1
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -69,6 +69,7 @@
             this.ingresarResidenciasToolStripMenuItem.Name = "ingresarResidenciasToolStripMenuItem";
             this.ingresarResidenciasToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.ingresarResidenciasToolStripMenuItem.Text = "Residencias";
+            this.ingresarResidenciasToolStripMenuItem.Click += new System.EventHandler(this.ingresarResidenciasToolStripMenuItem_Click);
             // 
             // espaciosPublicosToolStripMenuItem
             // 
@@ -106,10 +107,10 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -117,8 +118,9 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Main";
+            this.Text = "Administración de Condominio";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

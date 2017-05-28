@@ -19,7 +19,9 @@ namespace UMG_Progra1
 
         User getUser (string email, string password)
         {
-            if (password.Equals("test"))
+            if (password.Equals(""))
+            //if (password.Equals("test"))
+
             {
                 return new User("Mario", "mario@email.com");
             }
@@ -31,7 +33,7 @@ namespace UMG_Progra1
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            var parent = (Form1)MdiParent;
+            var parent = (Main)MdiParent;
             User user = getUser(emailText.Text, paswordText.Text);
             if (user != null)
             {

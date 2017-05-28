@@ -2,7 +2,6 @@ C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\bin\Debug\UMG-Progra1.exe.confi
 C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\bin\Debug\UMG-Progra1.exe
 C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\bin\Debug\UMG-Progra1.pdb
 C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG-Progra1.csprojResolveAssemblyReference.cache
-C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG_Progra1.Form1.resources
 C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG_Progra1.Login.resources
 C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG_Progra1.Properties.Resources.resources
 C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG-Progra1.csproj.GenerateResource.Cache
@@ -18,3 +17,5 @@ C:\Users\luis\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG_Progra1.Properties
 C:\Users\luis\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG-Progra1.csproj.GenerateResource.Cache
 C:\Users\luis\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG-Progra1.exe
 C:\Users\luis\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG-Progra1.pdb
+C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG_Progra1.Main.resources
+C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG_Progra1.FrmResidencias.resources

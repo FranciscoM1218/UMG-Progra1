@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace UMG_Progra1
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
         Login login;
         private User currentUser;
-        public Form1()
+        public Main()
         {
             InitializeComponent();
         }
@@ -34,5 +34,24 @@ namespace UMG_Progra1
             this.currentUser = user;
             userMenu.Text = user.Name;
         }
+
+        FrmResidencias residencias;
+
+        private void ingresarResidenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (residencias == null)
+            {
+                residencias = new FrmResidencias();
+                residencias.MdiParent = this;
+                residencias.FormClosed += new FormClosedEventHandler(residencias_FormClosed);
+                residencias.Show();
+            }            
+        }
+
+        void residencias_FormClosed(object sender, EventArgs e)
+        {
+            residencias = null;
+        }
+
     }
 }
