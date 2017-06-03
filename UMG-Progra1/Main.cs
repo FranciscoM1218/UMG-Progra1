@@ -39,7 +39,7 @@ namespace UMG_Progra1
         }
         public void EnableMenuStrip(User user)
         {
-            Console.WriteLine("Enabled");
+            //Console.WriteLine("Enabled");
             //menuStrip1.Items[0].Visible  = false;
             menuStrip1.Visible = true;
             login.Hide();
@@ -111,6 +111,12 @@ namespace UMG_Progra1
                 cuotas.FormClosed += new FormClosedEventHandler(cuotas_FormClosed);
                 cuotas.Show();
             }
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            menuStrip1.Visible = false;
+            login.Show();
         }
     }
 }

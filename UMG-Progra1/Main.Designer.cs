@@ -34,7 +34,6 @@
             this.espaciosPublicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reservacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -44,7 +43,6 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.administracionToolStripMenuItem,
-            this.reservacionesToolStripMenuItem,
             this.userMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -92,12 +90,6 @@
             this.cuotasToolStripMenuItem.Text = "Cuotas";
             this.cuotasToolStripMenuItem.Click += new System.EventHandler(this.cuotasToolStripMenuItem_Click);
             // 
-            // reservacionesToolStripMenuItem
-            // 
-            this.reservacionesToolStripMenuItem.Name = "reservacionesToolStripMenuItem";
-            this.reservacionesToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
-            this.reservacionesToolStripMenuItem.Text = "Reservaciones";
-            // 
             // userMenu
             // 
             this.userMenu.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -110,8 +102,9 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Text = "Cerrar Sesión";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -140,7 +133,6 @@
         private System.Windows.Forms.ToolStripMenuItem espaciosPublicosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cuotasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reservacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem userMenu;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }

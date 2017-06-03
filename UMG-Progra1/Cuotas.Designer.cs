@@ -45,12 +45,12 @@
             this.paymentTableAdapter = new UMG_Progra1.umgDataSetTableAdapters.paymentTableAdapter();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.paymentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.placeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.userBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.userTableAdapter1 = new UMG_Progra1.umgDataSetTableAdapters.userTableAdapter();
             this.feeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.paymentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.userTableAdapter1 = new UMG_Progra1.umgDataSetTableAdapters.userTableAdapter();
             this.id_payment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_place = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,10 +68,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.placeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // userTableAdapter
@@ -119,14 +119,9 @@
             this.dataGridView1.DataSource = this.paymentBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(711, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(650, 500);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // paymentBindingSource1
-            // 
-            this.paymentBindingSource1.DataMember = "payment";
-            this.paymentBindingSource1.DataSource = this.umgDataSet;
             // 
             // placeBindingSource
             // 
@@ -138,19 +133,24 @@
             this.userBindingSource1.DataMember = "user";
             this.userBindingSource1.DataSource = this.umgDataSet;
             // 
-            // userTableAdapter1
-            // 
-            this.userTableAdapter1.ClearBeforeFill = true;
-            // 
             // feeBindingSource1
             // 
             this.feeBindingSource1.DataMember = "fee";
             this.feeBindingSource1.DataSource = this.umgDataSet;
             // 
+            // paymentBindingSource1
+            // 
+            this.paymentBindingSource1.DataMember = "payment";
+            this.paymentBindingSource1.DataSource = this.umgDataSet;
+            // 
+            // userTableAdapter1
+            // 
+            this.userTableAdapter1.ClearBeforeFill = true;
+            // 
             // id_payment
             // 
             this.id_payment.DataPropertyName = "id_payment";
-            this.id_payment.HeaderText = "id_payment";
+            this.id_payment.HeaderText = "Cuota";
             this.id_payment.Name = "id_payment";
             this.id_payment.ReadOnly = true;
             // 
@@ -166,7 +166,7 @@
             // date
             // 
             this.date.DataPropertyName = "date";
-            this.date.HeaderText = "date";
+            this.date.HeaderText = "Fecha";
             this.date.Name = "date";
             // 
             // id_user
@@ -198,7 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 261);
+            this.ClientSize = new System.Drawing.Size(679, 527);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmCuotas";
             this.Text = "Cuotas";
@@ -214,10 +214,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.placeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -72,47 +72,47 @@
             this.Eliminar});
             this.dataGridView2.DataMember = "user";
             this.dataGridView2.DataSource = this.umgDataSetBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 12);
+            this.dataGridView2.Location = new System.Drawing.Point(12, 12);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(957, 461);
+            this.dataGridView2.Size = new System.Drawing.Size(950, 500);
             this.dataGridView2.TabIndex = 1;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // id_user
             // 
             this.id_user.DataPropertyName = "id_user";
-            this.id_user.HeaderText = "id_user";
+            this.id_user.HeaderText = "Usuario";
             this.id_user.Name = "id_user";
             this.id_user.ReadOnly = true;
             // 
             // dpi
             // 
             this.dpi.DataPropertyName = "dpi";
-            this.dpi.HeaderText = "dpi";
+            this.dpi.HeaderText = "DPI";
             this.dpi.Name = "dpi";
             // 
             // name
             // 
             this.name.DataPropertyName = "name";
-            this.name.HeaderText = "name";
+            this.name.HeaderText = "Nombre";
             this.name.Name = "name";
             // 
             // email
             // 
             this.email.DataPropertyName = "email";
-            this.email.HeaderText = "email";
+            this.email.HeaderText = "Correo";
             this.email.Name = "email";
             // 
             // password
             // 
             this.password.DataPropertyName = "password";
-            this.password.HeaderText = "password";
+            this.password.HeaderText = "Contraseña";
             this.password.Name = "password";
             // 
             // age
             // 
             this.age.DataPropertyName = "age";
-            this.age.HeaderText = "age";
+            this.age.HeaderText = "Edad";
             this.age.Name = "age";
             this.age.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
@@ -120,7 +120,7 @@
             // 
             this.admin.DataPropertyName = "admin";
             this.admin.FalseValue = "false";
-            this.admin.HeaderText = "admin";
+            this.admin.HeaderText = "Administrador";
             this.admin.IndeterminateValue = "false";
             this.admin.Name = "admin";
             this.admin.TrueValue = "true";
@@ -140,7 +140,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 554);
+            this.ClientSize = new System.Drawing.Size(974, 522);
             this.Controls.Add(this.dataGridView2);
             this.Name = "FrmUsuarios";
             this.Text = " ";

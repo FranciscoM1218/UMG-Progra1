@@ -78,7 +78,7 @@
             this.dataGridView1.DataSource = this.placeBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1174, 525);
+            this.dataGridView1.Size = new System.Drawing.Size(1150, 500);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
@@ -127,20 +127,20 @@
             // id_place
             // 
             this.id_place.DataPropertyName = "id_place";
-            this.id_place.HeaderText = "id_place";
+            this.id_place.HeaderText = "Lugar";
             this.id_place.Name = "id_place";
             this.id_place.ReadOnly = true;
             // 
             // location
             // 
             this.location.DataPropertyName = "location";
-            this.location.HeaderText = "location";
+            this.location.HeaderText = "Ubicación";
             this.location.Name = "location";
             // 
             // number
             // 
             this.number.DataPropertyName = "number";
-            this.number.HeaderText = "number";
+            this.number.HeaderText = "Número";
             this.number.Name = "number";
             // 
             // id_user
@@ -155,13 +155,13 @@
             // star_date
             // 
             this.star_date.DataPropertyName = "star_date";
-            this.star_date.HeaderText = "star_date";
+            this.star_date.HeaderText = "Fecha Inicial";
             this.star_date.Name = "star_date";
             // 
             // end_date
             // 
             this.end_date.DataPropertyName = "end_date";
-            this.end_date.HeaderText = "end_date";
+            this.end_date.HeaderText = "Fecha Final";
             this.end_date.Name = "end_date";
             // 
             // id_fee
@@ -176,25 +176,25 @@
             // capacity
             // 
             this.capacity.DataPropertyName = "capacity";
-            this.capacity.HeaderText = "capacity";
+            this.capacity.HeaderText = "Capcidad";
             this.capacity.Name = "capacity";
             // 
             // status
             // 
             this.status.DataPropertyName = "status";
-            this.status.HeaderText = "status";
+            this.status.HeaderText = "Estado";
             this.status.Name = "status";
             // 
             // Guardar
             // 
-            this.Guardar.HeaderText = "";
+            this.Guardar.HeaderText = "Guardar";
             this.Guardar.Name = "Guardar";
             this.Guardar.ReadOnly = true;
             this.Guardar.Text = "Guardar";
             // 
             // Eliminar
             // 
-            this.Eliminar.HeaderText = "";
+            this.Eliminar.HeaderText = "Eliminar";
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Text = "Eliminar";
             // 
@@ -202,7 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1206, 617);
+            this.ClientSize = new System.Drawing.Size(1173, 523);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmResidencias";
             this.Text = " ";

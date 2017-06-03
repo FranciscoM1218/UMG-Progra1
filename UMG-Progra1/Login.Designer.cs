@@ -83,7 +83,7 @@
             // loginWarning
             // 
             this.loginWarning.AutoSize = true;
-            this.loginWarning.Location = new System.Drawing.Point(117, 200);
+            this.loginWarning.Location = new System.Drawing.Point(70, 173);
             this.loginWarning.Name = "loginWarning";
             this.loginWarning.Size = new System.Drawing.Size(147, 13);
             this.loginWarning.TabIndex = 5;

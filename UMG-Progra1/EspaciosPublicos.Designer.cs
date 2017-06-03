@@ -40,12 +40,12 @@
             this.placeTableAdapter1 = new UMG_Progra1.umgDataSet1TableAdapters.placeTableAdapter();
             this.paymentTableAdapter = new UMG_Progra1.umgDataSet1TableAdapters.paymentTableAdapter();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.userBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.feeBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.umgDataSet = new UMG_Progra1.umgDataSet();
             this.userBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.feeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.userBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.userTableAdapter1 = new UMG_Progra1.umgDataSet1TableAdapters.userTableAdapter();
-            this.feeBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.feeTableAdapter1 = new UMG_Progra1.umgDataSet1TableAdapters.feeTableAdapter();
             this.id_place = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.location = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,11 +65,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.umgDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKpaymentplaceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.umgDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // userBindingSource
@@ -130,9 +130,19 @@
             this.dataGridView2.DataSource = this.placeBindingSource1;
             this.dataGridView2.Location = new System.Drawing.Point(12, 12);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1335, 226);
+            this.dataGridView2.Size = new System.Drawing.Size(1150, 500);
             this.dataGridView2.TabIndex = 1;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // userBindingSource2
+            // 
+            this.userBindingSource2.DataMember = "user";
+            this.userBindingSource2.DataSource = this.umgDataSet1;
+            // 
+            // feeBindingSource2
+            // 
+            this.feeBindingSource2.DataMember = "fee";
+            this.feeBindingSource2.DataSource = this.umgDataSet1;
             // 
             // umgDataSet
             // 
@@ -149,19 +159,9 @@
             this.feeBindingSource1.DataMember = "fee";
             this.feeBindingSource1.DataSource = this.umgDataSet;
             // 
-            // userBindingSource2
-            // 
-            this.userBindingSource2.DataMember = "user";
-            this.userBindingSource2.DataSource = this.umgDataSet1;
-            // 
             // userTableAdapter1
             // 
             this.userTableAdapter1.ClearBeforeFill = true;
-            // 
-            // feeBindingSource2
-            // 
-            this.feeBindingSource2.DataMember = "fee";
-            this.feeBindingSource2.DataSource = this.umgDataSet1;
             // 
             // feeTableAdapter1
             // 
@@ -170,20 +170,20 @@
             // id_place
             // 
             this.id_place.DataPropertyName = "id_place";
-            this.id_place.HeaderText = "id_place";
+            this.id_place.HeaderText = "Lugar";
             this.id_place.Name = "id_place";
             this.id_place.ReadOnly = true;
             // 
             // location
             // 
             this.location.DataPropertyName = "location";
-            this.location.HeaderText = "location";
+            this.location.HeaderText = "Ubicación";
             this.location.Name = "location";
             // 
             // number
             // 
             this.number.DataPropertyName = "number";
-            this.number.HeaderText = "number";
+            this.number.HeaderText = "Número";
             this.number.Name = "number";
             // 
             // id_user
@@ -198,13 +198,13 @@
             // star_date
             // 
             this.star_date.DataPropertyName = "star_date";
-            this.star_date.HeaderText = "star_date";
+            this.star_date.HeaderText = "Fecha Inicial";
             this.star_date.Name = "star_date";
             // 
             // end_date
             // 
             this.end_date.DataPropertyName = "end_date";
-            this.end_date.HeaderText = "end_date";
+            this.end_date.HeaderText = "Fecha Final";
             this.end_date.Name = "end_date";
             // 
             // id_fee
@@ -219,13 +219,13 @@
             // capacity
             // 
             this.capacity.DataPropertyName = "capacity";
-            this.capacity.HeaderText = "capacity";
+            this.capacity.HeaderText = "Capcidad";
             this.capacity.Name = "capacity";
             // 
             // status
             // 
             this.status.DataPropertyName = "status";
-            this.status.HeaderText = "status";
+            this.status.HeaderText = "Estado";
             this.status.Name = "status";
             // 
             // Guardar
@@ -242,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1379, 509);
+            this.ClientSize = new System.Drawing.Size(1173, 521);
             this.Controls.Add(this.dataGridView2);
             this.Name = "FrmEspaciosPublicos";
             this.Text = "EspaciosPublicos";
@@ -254,11 +254,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.umgDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKpaymentplaceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.umgDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
