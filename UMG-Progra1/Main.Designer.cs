@@ -76,18 +76,21 @@
             this.espaciosPublicosToolStripMenuItem.Name = "espaciosPublicosToolStripMenuItem";
             this.espaciosPublicosToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.espaciosPublicosToolStripMenuItem.Text = "Espacios publicos";
+            this.espaciosPublicosToolStripMenuItem.Click += new System.EventHandler(this.espaciosPublicosToolStripMenuItem_Click_1);
             // 
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
             this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // cuotasToolStripMenuItem
             // 
             this.cuotasToolStripMenuItem.Name = "cuotasToolStripMenuItem";
             this.cuotasToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.cuotasToolStripMenuItem.Text = "Cuotas";
+            this.cuotasToolStripMenuItem.Click += new System.EventHandler(this.cuotasToolStripMenuItem_Click);
             // 
             // reservacionesToolStripMenuItem
             // 

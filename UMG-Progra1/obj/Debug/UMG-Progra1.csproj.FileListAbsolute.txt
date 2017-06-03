@@ -19,4 +19,6 @@ C:\Users\luis\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG-Progra1.exe
 C:\Users\luis\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG-Progra1.pdb
 C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG_Progra1.Main.resources
 C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG_Progra1.FrmResidencias.resources
-C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG_Progra1.Usuarios.resources
+C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG_Progra1.FrmUsuarios.resources
+C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG_Progra1.FrmEspaciosPublicos.resources
+C:\Users\fran_\Documents\UMG-Progra1\UMG-Progra1\obj\Debug\UMG_Progra1.FrmCuotas.resources

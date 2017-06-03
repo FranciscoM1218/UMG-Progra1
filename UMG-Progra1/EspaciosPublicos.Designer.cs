@@ -1,6 +1,6 @@
 ﻿namespace UMG_Progra1
 {
-    partial class FrmResidencias
+    partial class FrmEspaciosPublicos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.umgDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.umgDataSet = new UMG_Progra1.umgDataSet();
             this.feeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.placeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.placeTableAdapter = new UMG_Progra1.umgDataSetTableAdapters.placeTableAdapter();
+            this.placeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.umgDataSet1 = new UMG_Progra1.umgDataSet1();
+            this.fKpaymentplaceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.userTableAdapter = new UMG_Progra1.umgDataSetTableAdapters.userTableAdapter();
-            this.userBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.feeTableAdapter = new UMG_Progra1.umgDataSetTableAdapters.feeTableAdapter();
+            this.placeTableAdapter1 = new UMG_Progra1.umgDataSet1TableAdapters.placeTableAdapter();
+            this.paymentTableAdapter = new UMG_Progra1.umgDataSet1TableAdapters.paymentTableAdapter();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.umgDataSet = new UMG_Progra1.umgDataSet();
+            this.userBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.feeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.userBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.userTableAdapter1 = new UMG_Progra1.umgDataSet1TableAdapters.userTableAdapter();
+            this.feeBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.feeTableAdapter1 = new UMG_Progra1.umgDataSet1TableAdapters.feeTableAdapter();
             this.id_place = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.location = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,20 +58,64 @@
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Guardar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.umgDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.umgDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.placeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.placeBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.umgDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKpaymentplaceBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.umgDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // userBindingSource
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.userBindingSource.DataSource = this.umgDataSetBindingSource;
+            // 
+            // feeBindingSource
+            // 
+            this.feeBindingSource.DataSource = this.umgDataSetBindingSource;
+            // 
+            // placeBindingSource1
+            // 
+            this.placeBindingSource1.DataMember = "place";
+            this.placeBindingSource1.DataSource = this.umgDataSet1;
+            // 
+            // umgDataSet1
+            // 
+            this.umgDataSet1.DataSetName = "umgDataSet1";
+            this.umgDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fKpaymentplaceBindingSource
+            // 
+            this.fKpaymentplaceBindingSource.DataMember = "FK_payment_place";
+            this.fKpaymentplaceBindingSource.DataSource = this.placeBindingSource1;
+            // 
+            // userTableAdapter
+            // 
+            this.userTableAdapter.ClearBeforeFill = true;
+            // 
+            // feeTableAdapter
+            // 
+            this.feeTableAdapter.ClearBeforeFill = true;
+            // 
+            // placeTableAdapter1
+            // 
+            this.placeTableAdapter1.ClearBeforeFill = true;
+            // 
+            // paymentTableAdapter
+            // 
+            this.paymentTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_place,
             this.location,
             this.number,
@@ -75,54 +127,45 @@
             this.status,
             this.Guardar,
             this.Eliminar});
-            this.dataGridView1.DataSource = this.placeBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1174, 525);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // userBindingSource
-            // 
-            this.userBindingSource.DataMember = "user";
-            this.userBindingSource.DataSource = this.umgDataSetBindingSource;
-            // 
-            // umgDataSetBindingSource
-            // 
-            this.umgDataSetBindingSource.DataSource = this.umgDataSet;
-            this.umgDataSetBindingSource.Position = 0;
+            this.dataGridView2.DataSource = this.placeBindingSource1;
+            this.dataGridView2.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(1335, 226);
+            this.dataGridView2.TabIndex = 1;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // umgDataSet
             // 
             this.umgDataSet.DataSetName = "umgDataSet";
             this.umgDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // feeBindingSource
-            // 
-            this.feeBindingSource.DataMember = "fee";
-            this.feeBindingSource.DataSource = this.umgDataSetBindingSource;
-            // 
-            // placeBindingSource
-            // 
-            this.placeBindingSource.DataMember = "place";
-            this.placeBindingSource.DataSource = this.umgDataSetBindingSource;
-            // 
-            // placeTableAdapter
-            // 
-            this.placeTableAdapter.ClearBeforeFill = true;
-            // 
-            // userTableAdapter
-            // 
-            this.userTableAdapter.ClearBeforeFill = true;
-            // 
             // userBindingSource1
             // 
             this.userBindingSource1.DataMember = "user";
-            this.userBindingSource1.DataSource = this.umgDataSetBindingSource;
+            this.userBindingSource1.DataSource = this.umgDataSet;
             // 
-            // feeTableAdapter
+            // feeBindingSource1
             // 
-            this.feeTableAdapter.ClearBeforeFill = true;
+            this.feeBindingSource1.DataMember = "fee";
+            this.feeBindingSource1.DataSource = this.umgDataSet;
+            // 
+            // userBindingSource2
+            // 
+            this.userBindingSource2.DataMember = "user";
+            this.userBindingSource2.DataSource = this.umgDataSet1;
+            // 
+            // userTableAdapter1
+            // 
+            this.userTableAdapter1.ClearBeforeFill = true;
+            // 
+            // feeBindingSource2
+            // 
+            this.feeBindingSource2.DataMember = "fee";
+            this.feeBindingSource2.DataSource = this.umgDataSet1;
+            // 
+            // feeTableAdapter1
+            // 
+            this.feeTableAdapter1.ClearBeforeFill = true;
             // 
             // id_place
             // 
@@ -146,7 +189,7 @@
             // id_user
             // 
             this.id_user.DataPropertyName = "id_user";
-            this.id_user.DataSource = this.userBindingSource;
+            this.id_user.DataSource = this.userBindingSource2;
             this.id_user.DisplayMember = "name";
             this.id_user.HeaderText = "Usuario";
             this.id_user.Name = "id_user";
@@ -167,7 +210,7 @@
             // id_fee
             // 
             this.id_fee.DataPropertyName = "id_fee";
-            this.id_fee.DataSource = this.feeBindingSource;
+            this.id_fee.DataSource = this.feeBindingSource2;
             this.id_fee.DisplayMember = "amount";
             this.id_fee.HeaderText = "Cuota";
             this.id_fee.Name = "id_fee";
@@ -187,49 +230,58 @@
             // 
             // Guardar
             // 
-            this.Guardar.HeaderText = "";
+            this.Guardar.HeaderText = "Guardar";
             this.Guardar.Name = "Guardar";
-            this.Guardar.ReadOnly = true;
-            this.Guardar.Text = "Guardar";
             // 
             // Eliminar
             // 
-            this.Eliminar.HeaderText = "";
+            this.Eliminar.HeaderText = "Eliminar";
             this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Text = "Eliminar";
             // 
-            // FrmResidencias
+            // FrmEspaciosPublicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1206, 617);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "FrmResidencias";
-            this.Text = " ";
-            this.Load += new System.EventHandler(this.FrmResidencias_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ClientSize = new System.Drawing.Size(1379, 509);
+            this.Controls.Add(this.dataGridView2);
+            this.Name = "FrmEspaciosPublicos";
+            this.Text = "EspaciosPublicos";
+            this.Load += new System.EventHandler(this.EspaciosPublicos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.umgDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.umgDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.placeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.placeBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.umgDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKpaymentplaceBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.umgDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feeBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource umgDataSetBindingSource;
-        private umgDataSet umgDataSet;
-        private System.Windows.Forms.BindingSource placeBindingSource;
-        private umgDataSetTableAdapters.placeTableAdapter placeTableAdapter;
-        private umgDataSetTableAdapters.userTableAdapter userTableAdapter;
-        private System.Windows.Forms.BindingSource userBindingSource1;
+        private umgDataSet1 umgDataSet1;
+        private System.Windows.Forms.BindingSource placeBindingSource1;
+        private umgDataSet1TableAdapters.placeTableAdapter placeTableAdapter1;
+        private System.Windows.Forms.BindingSource fKpaymentplaceBindingSource;
+        private umgDataSet1TableAdapters.paymentTableAdapter paymentTableAdapter;
         private System.Windows.Forms.BindingSource userBindingSource;
+        private umgDataSetTableAdapters.userTableAdapter userTableAdapter;
         private System.Windows.Forms.BindingSource feeBindingSource;
         private umgDataSetTableAdapters.feeTableAdapter feeTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.BindingSource userBindingSource1;
+        private umgDataSet umgDataSet;
+        private System.Windows.Forms.BindingSource feeBindingSource1;
+        private System.Windows.Forms.BindingSource userBindingSource2;
+        private umgDataSet1TableAdapters.userTableAdapter userTableAdapter1;
+        private System.Windows.Forms.BindingSource feeBindingSource2;
+        private umgDataSet1TableAdapters.feeTableAdapter feeTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_place;
         private System.Windows.Forms.DataGridViewTextBoxColumn location;
         private System.Windows.Forms.DataGridViewTextBoxColumn number;

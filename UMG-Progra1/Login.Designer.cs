@@ -52,6 +52,7 @@
             this.paswordText.Name = "paswordText";
             this.paswordText.Size = new System.Drawing.Size(100, 20);
             this.paswordText.TabIndex = 1;
+            this.paswordText.Text = "1";
             // 
             // emailText
             // 
@@ -59,6 +60,7 @@
             this.emailText.Name = "emailText";
             this.emailText.Size = new System.Drawing.Size(100, 20);
             this.emailText.TabIndex = 2;
+            this.emailText.Text = "1";
             // 
             // label1
             // 
@@ -101,6 +103,7 @@
             this.Controls.Add(this.loginButton);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
